@@ -17,24 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CbJ-Ib-TDF">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="44" width="345" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-vo-Dwm">
                                 <rect key="frame" x="0.0" y="95" width="414" height="767"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI5-1y-2oM">
+                                <rect key="frame" x="345" y="44" width="69" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ce-zp-j6V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CbJ-Ib-TDF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OrO-Db-5wv"/>
-                            <constraint firstItem="CbJ-Ib-TDF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TLR-hK-8LJ"/>
+                            <constraint firstItem="GI5-1y-2oM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RRx-6Y-5uo"/>
                             <constraint firstItem="CbJ-Ib-TDF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V6E-6e-eKB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fSj-vo-Dwm" secondAttribute="bottom" id="Vd4-oo-HTa"/>
+                            <constraint firstItem="GI5-1y-2oM" firstAttribute="leading" secondItem="CbJ-Ib-TDF" secondAttribute="trailing" id="aBI-dp-3i3"/>
                             <constraint firstItem="fSj-vo-Dwm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iGQ-bv-U7N"/>
+                            <constraint firstItem="fSj-vo-Dwm" firstAttribute="top" secondItem="GI5-1y-2oM" secondAttribute="bottom" id="lhp-Rr-4Gx"/>
                             <constraint firstItem="fSj-vo-Dwm" firstAttribute="top" secondItem="CbJ-Ib-TDF" secondAttribute="bottom" id="pc3-0P-9oG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fSj-vo-Dwm" secondAttribute="trailing" id="rQb-eT-NrO"/>
+                            <constraint firstItem="GI5-1y-2oM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t7a-ye-iSi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -44,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="80"/>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
     </scenes>
     <resources>

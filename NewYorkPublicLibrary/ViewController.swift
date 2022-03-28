@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func searchButtonTapped(_ sender: Any) {
+        let query = searchBar.text
+        //fetch books
+    }
     @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
