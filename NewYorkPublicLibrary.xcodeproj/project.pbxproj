@@ -16,6 +16,8 @@
 		C9E8793127F215A200FC08A8 /* NewYorkPublicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793027F215A200FC08A8 /* NewYorkPublicLibraryTests.swift */; };
 		C9E8793B27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793A27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift */; };
 		C9E8793D27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */; };
+		C9E8795027F21D9800FC08A8 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8794F27F21D9800FC08A8 /* BookTableViewCell.swift */; };
+		C9E8795227F21DC100FC08A8 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E8795127F21DC100FC08A8 /* BookTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C9E8793627F215A200FC08A8 /* NewYorkPublicLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewYorkPublicLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E8793A27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkPublicLibraryUITests.swift; sourceTree = "<group>"; };
 		C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkPublicLibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9E8794F27F21D9800FC08A8 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		C9E8795127F21DC100FC08A8 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		C9E8791827F215A000FC08A8 /* NewYorkPublicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				C9E8794A27F216A600FC08A8 /* View */,
+				C9E8794927F2169E00FC08A8 /* Data */,
 				C9E8791927F215A000FC08A8 /* AppDelegate.swift */,
 				C9E8791B27F215A000FC08A8 /* SceneDelegate.swift */,
 				C9E8791D27F215A000FC08A8 /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */,
 			);
 			path = NewYorkPublicLibraryUITests;
+			sourceTree = "<group>";
+		};
+		C9E8794927F2169E00FC08A8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C9E8794A27F216A600FC08A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9E8794F27F21D9800FC08A8 /* BookTableViewCell.swift */,
+				C9E8795127F21DC100FC08A8 /* BookTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E8795227F21DC100FC08A8 /* BookTableViewCell.xib in Resources */,
 				C9E8792627F215A100FC08A8 /* LaunchScreen.storyboard in Resources */,
 				C9E8792327F215A100FC08A8 /* Assets.xcassets in Resources */,
 				C9E8792127F215A000FC08A8 /* Main.storyboard in Resources */,
@@ -260,6 +283,7 @@
 			files = (
 				C9E8791E27F215A000FC08A8 /* ViewController.swift in Sources */,
 				C9E8791A27F215A000FC08A8 /* AppDelegate.swift in Sources */,
+				C9E8795027F21D9800FC08A8 /* BookTableViewCell.swift in Sources */,
 				C9E8791C27F215A000FC08A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
