@@ -2,7 +2,7 @@
 //  BookViewModel.swift
 //  NewYorkPublicLibrary
 //
-//  Created by Rave Bizz on 3/28/22.
+//  Created by Juliana Connors on 3/28/22.
 //
 
 import Foundation
