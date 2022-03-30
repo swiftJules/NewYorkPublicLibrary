@@ -14,8 +14,6 @@
 		C9E8792327F215A100FC08A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E8792227F215A100FC08A8 /* Assets.xcassets */; };
 		C9E8792627F215A100FC08A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8792427F215A100FC08A8 /* LaunchScreen.storyboard */; };
 		C9E8793127F215A200FC08A8 /* NewYorkPublicLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793027F215A200FC08A8 /* NewYorkPublicLibraryTests.swift */; };
-		C9E8793B27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793A27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift */; };
-		C9E8793D27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */; };
 		C9E8795027F21D9800FC08A8 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8794F27F21D9800FC08A8 /* BookTableViewCell.swift */; };
 		C9E8795427F229EC00FC08A8 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8795327F229EC00FC08A8 /* BookModel.swift */; };
 		C9E8795627F229FF00FC08A8 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8795527F229FF00FC08A8 /* BookViewModel.swift */; };
@@ -52,8 +50,6 @@
 		C9E8792C27F215A200FC08A8 /* NewYorkPublicLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewYorkPublicLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E8793027F215A200FC08A8 /* NewYorkPublicLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkPublicLibraryTests.swift; sourceTree = "<group>"; };
 		C9E8793627F215A200FC08A8 /* NewYorkPublicLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewYorkPublicLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9E8793A27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkPublicLibraryUITests.swift; sourceTree = "<group>"; };
-		C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkPublicLibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9E8794F27F21D9800FC08A8 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		C9E8795327F229EC00FC08A8 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		C9E8795527F229FF00FC08A8 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
@@ -91,7 +87,6 @@
 			children = (
 				C9E8791827F215A000FC08A8 /* NewYorkPublicLibrary */,
 				C9E8792F27F215A200FC08A8 /* NewYorkPublicLibraryTests */,
-				C9E8793927F215A200FC08A8 /* NewYorkPublicLibraryUITests */,
 				C9E8791727F215A000FC08A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,15 +124,6 @@
 				C9E8793027F215A200FC08A8 /* NewYorkPublicLibraryTests.swift */,
 			);
 			path = NewYorkPublicLibraryTests;
-			sourceTree = "<group>";
-		};
-		C9E8793927F215A200FC08A8 /* NewYorkPublicLibraryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C9E8793A27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift */,
-				C9E8793C27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift */,
-			);
-			path = NewYorkPublicLibraryUITests;
 			sourceTree = "<group>";
 		};
 		C9E8794927F2169E00FC08A8 /* Data */ = {
@@ -320,8 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E8793B27F215A200FC08A8 /* NewYorkPublicLibraryUITests.swift in Sources */,
-				C9E8793D27F215A200FC08A8 /* NewYorkPublicLibraryUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
