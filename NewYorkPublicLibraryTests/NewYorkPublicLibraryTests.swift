@@ -2,7 +2,7 @@
 //  NewYorkPublicLibraryTests.swift
 //  NewYorkPublicLibraryTests
 //
-//  Created by Rave Bizz on 3/28/22.
+//  Created by Juliana Connors on 3/28/22.
 //
 
 import XCTest
@@ -31,6 +31,14 @@ class NewYorkPublicLibraryTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testFormatQuery() {
+        //let query = "Harry Potter"
+        
+        //let formattedQuery = formatQuery(query: query)
+        
+        //XCTAssertEqual(formattedQuery, "harry+potter")
     }
 
 }

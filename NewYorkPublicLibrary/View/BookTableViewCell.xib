@@ -8,35 +8,35 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="tva-n9-FBJ">
-            <rect key="frame" x="0.0" y="0.0" width="494" height="169"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookTableViewCell" rowHeight="215" id="PrA-kM-bFJ" customClass="BookTableViewCell" customModule="NewYorkPublicLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="215"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tva-n9-FBJ" id="KV7-sp-GZa" customClass="BookTableViewCell" customModule="NewYorkPublicLibrary" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="494" height="169"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PrA-kM-bFJ" id="hi2-KS-YYZ">
+                <rect key="frame" x="0.0" y="0.0" width="479" height="215"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-3r-Rxz">
-                        <rect key="frame" x="25" y="25" width="42" height="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHU-rj-dab">
+                        <rect key="frame" x="25" y="25" width="44.5" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="Zpt-fV-rEa"/>
+                            <constraint firstAttribute="height" constant="25" id="dz6-DS-A1x"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DJ-mg-ADZ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSJ-5x-H1L">
                         <rect key="frame" x="25" y="75" width="42" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="cfX-xA-oT5"/>
+                            <constraint firstAttribute="height" constant="25" id="teQ-bi-NTY"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMQ-rr-tA8">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-Gn-TqC">
                         <rect key="frame" x="25" y="125" width="42" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="uaO-Xa-BlI"/>
+                            <constraint firstAttribute="height" constant="25" id="Qul-Sf-l5c"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -44,21 +44,20 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="sMQ-rr-tA8" firstAttribute="top" secondItem="6DJ-mg-ADZ" secondAttribute="bottom" constant="25" id="KMI-Fp-0X0"/>
-                    <constraint firstItem="HUx-3r-Rxz" firstAttribute="top" secondItem="KV7-sp-GZa" secondAttribute="top" constant="25" id="Mbl-oo-7Pr"/>
-                    <constraint firstItem="sMQ-rr-tA8" firstAttribute="leading" secondItem="KV7-sp-GZa" secondAttribute="leading" constant="25" id="Ntz-jZ-SzY"/>
-                    <constraint firstItem="6DJ-mg-ADZ" firstAttribute="top" secondItem="HUx-3r-Rxz" secondAttribute="bottom" constant="25" id="PG8-WQ-8ZQ"/>
-                    <constraint firstItem="HUx-3r-Rxz" firstAttribute="leading" secondItem="KV7-sp-GZa" secondAttribute="leading" constant="25" id="ZTX-Wy-qdr"/>
-                    <constraint firstItem="6DJ-mg-ADZ" firstAttribute="leading" secondItem="KV7-sp-GZa" secondAttribute="leading" constant="25" id="u3c-hh-nwW"/>
-                    <constraint firstAttribute="bottom" secondItem="sMQ-rr-tA8" secondAttribute="bottom" constant="25" id="wMe-Vh-tYk"/>
+                    <constraint firstItem="FUh-Gn-TqC" firstAttribute="top" secondItem="eSJ-5x-H1L" secondAttribute="bottom" constant="25" id="0vx-BB-Ib1"/>
+                    <constraint firstItem="eSJ-5x-H1L" firstAttribute="leading" secondItem="hi2-KS-YYZ" secondAttribute="leading" constant="25" id="2Me-wL-xhU"/>
+                    <constraint firstItem="kHU-rj-dab" firstAttribute="leading" secondItem="hi2-KS-YYZ" secondAttribute="leading" constant="25" id="Ei4-cR-Mq8"/>
+                    <constraint firstItem="FUh-Gn-TqC" firstAttribute="leading" secondItem="hi2-KS-YYZ" secondAttribute="leading" constant="25" id="SMA-gP-5W3"/>
+                    <constraint firstItem="eSJ-5x-H1L" firstAttribute="top" secondItem="kHU-rj-dab" secondAttribute="bottom" constant="25" id="iGA-Ob-O4D"/>
+                    <constraint firstItem="kHU-rj-dab" firstAttribute="top" secondItem="hi2-KS-YYZ" secondAttribute="top" constant="25" id="kYA-M8-ebG"/>
                 </constraints>
-                <connections>
-                    <outlet property="authorName" destination="6DJ-mg-ADZ" id="fyK-Nu-7BQ"/>
-                    <outlet property="publishYear" destination="sMQ-rr-tA8" id="MFo-Qu-jVI"/>
-                    <outlet property="title" destination="HUx-3r-Rxz" id="C8t-Ue-Zcy"/>
-                </connections>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="13.043478260869566" y="-221.31696428571428"/>
+            <connections>
+                <outlet property="authorName" destination="eSJ-5x-H1L" id="suJ-ap-rpi"/>
+                <outlet property="title" destination="kHU-rj-dab" id="hsi-ls-KI1"/>
+                <outlet property="year" destination="FUh-Gn-TqC" id="fSm-ag-ukZ"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="82.03125"/>
         </tableViewCell>
     </objects>
 </document>
