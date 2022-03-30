@@ -13,8 +13,8 @@ class NewYorkPublicLibraryTests: XCTestCase {
     func testFormatQuery() {
         let query = "Harry Potter"
         
-        let requester = NetworkRequest()
-        let formattedQuery = requester.formatQuery(query: query)
+        let networkRequester = NetworkRequest()
+        let formattedQuery = networkRequester.formatQuery(query: query)
         
         XCTAssertEqual(formattedQuery, "harry+potter")
     }
