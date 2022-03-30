@@ -13,13 +13,17 @@ class ViewController: UIViewController {
     @IBAction func searchButtonTapped(_ sender: Any) {
         let query = searchBar.text
         if let query = query {
-            let formatted = formatQuery(query: query)
-            fetchBooks(query: formatted)
+            let formatted = networkRequester.formatQuery(query: query)
+            networkRequester.fetchBooks(query: formatted) { bookViewModels in
+                self.books = bookViewModels
+                self.updateTableView()
+            }
         }
     }
     
     @IBOutlet weak var searchBar: UISearchBar!
-    var books: [BookModel] = []
+    var books: [BookViewModel] = []
+    let networkRequester = NetworkRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,26 +40,10 @@ class ViewController: UIViewController {
         searchBar.backgroundColor = .clear
     }
     
-    func fetchBooks(query: String) {
-        let url = "https://openlibrary.org/search.json?title=" + query
-        guard let url = URL(string: url) else { return }
-        URLSession.shared.dataTask(with: url) { [self] data, response, error in
-            guard let data = data else { return }
-            do {
-                let decoder = JSONDecoder()
-                let response = try decoder.decode(Books.self, from: data)
-                books = response.docs
-                DispatchQueue.main.async {
-                    tableView.reloadData()
-                }
-            } catch {
-                print(error)
-            }
-        }.resume()
-    }
-    
-    func formatQuery(query: String) -> String {
-        query.lowercased().replacingOccurrences(of: " ", with: "+")
+    func updateTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
 
