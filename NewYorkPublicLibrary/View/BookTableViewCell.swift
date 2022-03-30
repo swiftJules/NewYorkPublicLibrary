@@ -8,6 +8,8 @@
 import UIKit
 
 class BookTableViewCell: UITableViewCell {
+    static let identifier = String(describing: BookTableViewCell.self)
+
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var authorName: UILabel!
     @IBOutlet weak var year: UILabel!

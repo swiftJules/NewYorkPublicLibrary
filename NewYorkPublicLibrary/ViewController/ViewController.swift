@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "BookTableViewCell", bundle: nil), forCellReuseIdentifier: "BookTableViewCell")
+        tableView.register(UINib(nibName: BookTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: BookTableViewCell.identifier)
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
@@ -55,7 +55,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BookTableViewCell") as? BookTableViewCell else { fatalError() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BookTableViewCell.identifier) as? BookTableViewCell else { fatalError() }
         cell.configureCell(book: books[indexPath.row])
         return cell
     }
