@@ -16,11 +16,9 @@ class BookTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configureCell(book: BookModel) {
+    func configureCell(book: BookViewModel) {
         title.text = book.title
-        if let yearPublished = book.firstPublishYear, let name = book.authorName?.first {
-            authorName.text = name
-            year.text = String(yearPublished)
-        }
+        authorName.text = book.authorName
+        year.text = book.yearPublished
     }
 }
